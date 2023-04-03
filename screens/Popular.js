@@ -34,9 +34,8 @@ renderItems = ({ item, index }) => {
     return (
       <Card
         key={`card-${index}`}
-        image={{ uri: item.url }}
+        title={item.title}
         imageProps={{ resizeMode: "cover" }}
-        featuredTitle={item.title}
         containerStyle={styles.cardContainer}
         featuredTitleStyle={styles.title}
       ></Card>
